@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="popup.css" />
+<link rel="stylesheet" href="css/login.css" />
+<script src="js/route.js" ></script>
+<script src="js/login.js" ></script>
+<script src="popup.js" ></script>
+
+</head>
+<body>
+<nav id="website-list" style="display:none">
+<ul class="with-img">
+	<li><a id="dashboard" ><label>DashBoard</label></a></li>
+	<li><a id="channel" ><label>Channel</label></a></li>
+	<li><a id="harvard" ><label>Harvard</label></a></li>
+</ul>
+<ul class="no-img">
+	<li class="url-link"><a target="_blank" href="http://www.lovezd.cc/wse/public/dict/wordlist.html">WordList</a></li>	
+</ul>
+</nav>
+<p id='info'></p>
+
+<div id="login-page" style="display:none">
+	<form id="wse-ext-login" action="" >
+		<h1>Log in</h1>
+        <input type="text" id="namewordlist" name="name" placeholder="Your Name" required="">
+        <input type="text" id="username" name="wseuser" placeholder="Your Student ID" >
+        <input type="password" id="password" name="wsepass" placeholder="Your Password" >
+        <input type="password" id="code" name="code" placeholder="A Secury Code" >
+        <button type="submit" >Submit</button>
+     </form>
+</div>
+
+<iframe id="work-frame" style="display:none"></iframe>
+
+</body>
+<html>

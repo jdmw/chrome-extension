@@ -1,0 +1,257 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 384px;
+    height: 456px;
+}
+
+
+nav#website-list  ul.with-img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+nav#website-list  ul.with-img li {
+    margin: 10px 5px 10px 15px;
+    display: inline-flex;
+    height: 40px;
+    list-style-type: none;
+}
+
+nav#website-list ul.with-img a{
+	position: relative;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	margin-left: -5px;
+}
+
+nav#website-list ul.with-img li a label {
+    top: 60px;
+    display: 
+    inline-block;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    /* text-decoration: underline; */
+    font-size: 10px;
+    color: blue;
+}
+
+nav#website-list ul.with-img li a:hover {
+    background-color: #1A9E9D;
+    opacity: 0.5;
+    border-color: #1A9E9D;
+    outline: 10px red;
+    /* box-shadow: 2px 2px 5px #890; */
+}
+
+nav#website-list ul.with-img li a:hover label {
+    background-color: #36449E;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+
+nav#website-list  ul.no-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+nav#website-list  ul.no-img li {
+    margin: 10px 10px 0px 10px;
+    display: inline-flex;
+    list-style-type: none;
+    height: 30px;
+    /* background: #c8ce7c; */
+    /* color: #c722aa; */
+}
+
+nav#website-list ul.no-img a{
+	position: relative;
+	display: inline;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 4px;
+	text-decoration: none;
+	background: #6ec3c3;
+}
+
+nav#website-list ul.no-img li:hover  a {
+    background-color: rgba(158, 88, 26, 0.63);
+    opacity: 0.5;
+    border:solid 1px 1px 1px 2px ;
+    box-shadow	: 1px 1px 2px 2px #af5438 ;
+    border-color: #af5438;
+    outline: 10px #ec0303;
+    color:white
+}
+
+nav a#dashboard{
+	background-image: url('img/links/logo-wse.jpg');
+	BACKGROUND-SIZE: 60PX 60PX;
+}
+
+iframe#work-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    z-index: 10;
+    background: white;
+}
+
+@-webkit-keyframes  show
+{
+	0% {
+		background: red;
+	}
+	
+	to {
+		background: yellow;
+	}
+}* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 384px;
+    height: 456px;
+}
+
+
+nav#website-list  ul.with-img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+nav#website-list  ul.with-img li {
+    margin: 10px 5px 10px 15px;
+    display: inline-flex;
+    height: 40px;
+    list-style-type: none;
+}
+
+nav#website-list ul.with-img a{
+	position: relative;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	margin-left: -5px;
+}
+
+nav#website-list ul.with-img li a label {
+    top: 60px;
+    display: 
+    inline-block;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    /* text-decoration: underline; */
+    font-size: 10px;
+    color: blue;
+}
+
+nav#website-list ul.with-img li a:hover {
+    background-color: #1A9E9D;
+    opacity: 0.5;
+    border-color: #1A9E9D;
+    outline: 10px red;
+    /* box-shadow: 2px 2px 5px #890; */
+}
+
+nav#website-list ul.with-img li a:hover label {
+    background-color: #36449E;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+
+nav#website-list  ul.no-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+nav#website-list  ul.no-img li {
+    margin: 10px 10px 0px 10px;
+    display: inline-flex;
+    list-style-type: none;
+    height: 30px;
+    /* background: #c8ce7c; */
+    /* color: #c722aa; */
+}
+
+nav#website-list ul.no-img a{
+	position: relative;
+	display: inline;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 4px;
+	text-decoration: none;
+	background: #6ec3c3;
+}
+
+nav#website-list ul.no-img li:hover  a {
+    background-color: rgba(158, 88, 26, 0.63);
+    opacity: 0.5;
+    border:solid 1px 1px 1px 2px ;
+    box-shadow	: 1px 1px 2px 2px #af5438 ;
+    border-color: #af5438;
+    outline: 10px #ec0303;
+    color:white
+}
+
+nav a#dashboard{
+	background-image: url('img/links/logo-wse.jpg');
+	BACKGROUND-SIZE: 60PX 60PX;
+}
+
+iframe#work-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    z-index: 10;
+    background: white;
+}
+
+@-webkit-keyframes  show
+{
+	0% {
+		background: red;
+	}
+	
+	to {
+		background: yellow;
+	}
+}

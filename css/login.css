@@ -1,0 +1,69 @@
+#login-page{
+	position: absolute;
+	top: 0px;
+	width: 384px;
+	height: 456px;
+	margin: 0px;
+	padding: 0px;
+	border:0px;
+	background: -100px 0px url(../img/bg/bg-login.jpg) no-repeat;
+	background-size: 714px 892px;
+	z-index: 1000;
+}
+
+form#wse-ext-login {
+	width: 340px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	background-color: rgba(37, 107, 35, 0.16);
+}
+
+form#wse-ext-login h1{
+	text-align: center;
+	text-overflow: clip;
+	overflow: auto;
+	color: #ffffff;
+	font-size: 40px;
+	margin: 10px;
+}
+
+form#wse-ext-login input{
+	margin: 10px 40px;
+	width: 260px;
+	height: 48px;
+	padding: 5px 20px;
+	line-height: 2em;
+	font-size: 25px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.59);
+	box-sizing: border-box;
+}
+
+form#wse-ext-login button{
+	margin: 10px 40px;
+	height: 50px;
+	width: 260px;
+	font-size: 30px;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: rgba(131, 85, 202, 0.81);
+	color: white;
+	border-radius: 8px;
+	border: 2px saddlebrown;
+}
+
+form#wse-ext-login button:hover,form#wse-ext-login button:focus{
+	background: rgb(51, 125, 21);
+	color: #ccbf1b;
+}
+
+form#wse-ext-login #name.success {
+    color: rgba(0, 255, 0, 0.76);
+    background: rgba(37, 107, 35, 0.16);
+    border: 0px;
+    display: block;
+    pointer-events: none;
+    font-size: 40px;
+    font-stretch: expanded;
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "EHE",
+  "description": "english leanning helper extension",
+  "version": "1.0",
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js","js/bg/users/moseeker.js","js/bg/Storage.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*login*", "https://*/*"],
+      "js": ["js/bg/inject_for_login.js"],
+      "comment: run_at options": "document_start document_end document_idle(default)" ,
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "img/christmas-tree.png",
+    "default_popup": "popup.html",
+    "default_title": "Love English!"
+  },
+  "permissions": [
+    "contextMenus",
+    "bookmarks",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab",
+    "storage",
+    "declarativeContent",
+    "http://*/*",
+    "http://*/*",
+    "https://world.wallstreetenglish.com.cn/",
+    "https://manuals.wseworld.com/",
+    "http://www.wsistudent.com/",
+    "http://www.wsi.com.cn/"
+  ]
+}
