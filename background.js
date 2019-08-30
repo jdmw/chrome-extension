@@ -57,12 +57,17 @@ var match = (function(matcher,url){
       }else{
         if( !urlinfo['host'] ) {
           var _info = parseUrl(urlinfo.url)
-          for (var k in _info){
-            urlinfo[k] = _info[k]
+          for (var k1 in _info){
+            urlinfo[k1] = _info[k1]
           }
         }
         switch(k){
-          case "hostEquals" : if ( urlinfo['host'] !== matcher[k] ) return false; break;
+          case "hostEquals" : {
+            if ( urlinfo['host'] !== matcher[k] ) {
+              return false;
+              debugger;
+            } break;
+          }
         }
       }
     }
