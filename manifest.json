@@ -13,6 +13,11 @@
       "js": ["js/bg/inject_for_login.js"],
       "comment: run_at options": "document_start document_end document_idle(default)" ,
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.runoob.com/*"],
+      "js": ["js/bg/runoob_note_to_markdown.js"],
+      "run_at": "document_end"
     }
   ],
   "browser_action": {
