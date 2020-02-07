@@ -37,8 +37,8 @@ var users = (window.users || []).concat([
     name : "sandbox-hr",
     matcher : {hostEquals: 'hr-t.dqprism.com'},
     account : {
-      username : "18365251623",
-      password : "moseeker123"
+      username : "15000869284",
+      password : "moseeker321"
     },
     pageAction: {
       loginMethodLable : "#Input2",
