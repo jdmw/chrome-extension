@@ -32,6 +32,17 @@ var users = (window.users || []).concat([
       loginMethodLable : "#Input2",
       userfield : "[name=mobile]"
     }
+  },{
+    name : "dev3-hr",
+    matcher : {hostEquals: 'hr3.dqprism.com'},
+    account : {
+      username : "13162064424",
+      password : "123qweasd"
+    },
+    pageAction: {
+      loginMethodLable : "#Input2",
+      userfield : "[name=mobile]"
+    }
   },
   {
     name : "sandbox-hr",
