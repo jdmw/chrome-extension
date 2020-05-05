@@ -1,4 +1,5 @@
 chrome.runtime.onInstalled.addListener(function () {
+  console.log("chrome.runtime.onInstalled.addListener" + Date());
   /*
   chrome.storage.sync.set({color:'#00FF00'},function(){
     console.log("set the color #00FF00" );
@@ -17,6 +18,44 @@ chrome.runtime.onInstalled.addListener(function () {
     ]);
   });
   */
+
+});
+
+chrome.runtime.onStartup.addListener(function() {
+  var proxy_server = "localhost:12888" ;
+  var setProxy = function () {
+    var fixedServerProxyConfig = {
+      mode: "fixed_servers",
+      rules: {
+        singleProxy: {
+          scheme: "http",
+          host: proxy_server,
+        },
+        bypassList: ["localhost*"],
+      },
+    };
+
+    var pacPrxyConfig = {
+      mode: "pac_script",
+      pacScript: {
+        // url: "js/prxy_pac_script.js",
+        data: "function findProxyForURL(url, host) {" + 
+          " console.log(host);" +
+          " //if (host.match('hr1.dqprism.com') {" +
+          "   return \"PROXY localhost:12888\";" +
+          " //}" +
+          
+          " //return \"DIRECT\""+
+          "}",
+      },
+    };
+    chrome.proxy.settings.set(
+      { value: fixedServerProxyConfig, scope: "regular" },
+      function () {}
+    );
+  };
+  //setProxy();
+
   chrome.webRequest.onBeforeRequest.addListener(
     function (detail) {
       console.log(detail);
@@ -144,4 +183,4 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   sendResponse(res);
 });
 
-console.log("chrome.runtime.onMessage.addListener");
+console.log("chrome.runtime.onMessage.addListener" + Date());

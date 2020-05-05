@@ -1,5 +1,0 @@
-bookmarks:
-mac /Users/huangxia/Library/Application Support/Google/Chrome/Default/Bookmarks
-
-
-

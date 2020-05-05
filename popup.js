@@ -158,14 +158,18 @@ document.addEventListener("DOMContentLoaded", function () {
     /******************* chrome proxy  ******************/
 
     var setProxy = function () {
+      var proxy = {
+        scheme: "http",
+        host: "localhost",
+        port : 12888
+      }
       var fixedServerProxyConfig = {
         mode: "fixed_servers",
         rules: {
-          singleProxy: {
-            scheme: "https",
-            host: "localhost",
-          },
-          bypassList: ["localhost*"],
+          singleProxy :proxy,
+          //proxyForHttp:proxy,
+          //proxyForHttps:proxy,
+          bypassList: null //["localhost*"],
         },
       };
       var findProxyForURL = function (url, host) {
@@ -184,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       };
       chrome.proxy.settings.set(
-        { value: pacPrxyConfig, scope: "regular" },
+        { value: fixedServerProxyConfig, scope: "regular" },
         function () {}
       );
     };
@@ -195,9 +199,8 @@ document.addEventListener("DOMContentLoaded", function () {
         function () {}
       );*/
     };
-    //setProxy();
+    setProxy();
     chrome.proxy.settings.get({ incognito: false }, function (config) {
-      debugger;
       console.log(JSON.stringify(config));
     });
   });
